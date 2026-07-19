@@ -1,7 +1,7 @@
 import React from 'react'
 import communities from '../data/communties'
 import Communities from './Communities'
-import { FaKhanda } from "react-icons/fa6";
+
 import { FaCheckCircle } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -24,6 +24,7 @@ const CommunityDetail = () => {
         return community.id === Number(id)
     })
 
+    const Logo = community.logo;
     return (
         <div className='bg-slate-50 min-h-screen'>
             <div className=' bg-no-repeat h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80  bg-cover bg-center' style={{ backgroundImage: `url(${community.image})` }}> </div>
@@ -33,7 +34,8 @@ const CommunityDetail = () => {
                     <div className='flex flex-col gap-6 justify-center items-center p-6'>
                         <div className='bg-white w-14 h-14 shadow-lg md:h-16 md:w-16 lg:w-20 lg:h-20 rounded-full flex justify-center items-center'>
 
-                            <FaKhanda className='text-blue-600 text-3xl md:text-4xl lg:text-5xl' />
+
+                            <Logo className='text-6xl text-blue-600 p-2' />
                         </div>
 
                         <div className='flex flex-col  gap-3'>
