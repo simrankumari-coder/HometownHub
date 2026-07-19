@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <div className='bg-white'>
             <div className='relative flex flex-col justify-center items-center'>
-                <img className='w-full max-w-full h-[320px] md:h-[500px] object-cover' style={{ backgroundImage: `url(${background})` }} src={background} alt="no img found" />
+                <img className='w-full max-w-full h-[320px] md:h-[500px] object-cover' style={{ backgroundImage: `url(${background})` }} src={background} alt="background image" />
 
                 <div className='absolute inset-0 px-4 gap-3 z-3 font-bold justify-center items-center flex flex-col'>
                     <h1 className='text-white font-bold text-3xl md:text-5xl text-center' >Welcome to the HometownHub</h1>
