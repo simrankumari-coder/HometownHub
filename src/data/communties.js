@@ -26,6 +26,19 @@ import cropSeminar from '../assets/images/cropSeminar.jpg'
 import kisanCamp from '../assets/images/kisanCamp.jpeg'
 import reactBootcamp from '../assets/images/reactBootcamp.png'
 import hackathon from '../assets/images/hackathon.jpg'
+import aiWorkshop from '../assets/images/aiWorkshop.jpg'
+import openMic from '../assets/images/openMic.jpg'
+import bandCompetition from '../assets/images/bandCompetition.jpg'
+import jamSession from '../assets/images/jamSession.jpg'
+import photoGraphyWalk from '../assets/images/photoGraphyWalk.jpg'
+import camping from '../assets/images/camping.jpg'
+import shimlaTrip from '../assets/images/shimlaTrip.jpg'
+import yogaFitness from '../assets/images/yogaFitness.jpg'
+import morningFitness from '../assets/images/morningFitness.jpg'
+import nutrition from '../assets/images/nutrition.jpg'
+import cricketMatch from '../assets/images/cricketMatch.jpg'
+import footballMatch from '../assets/images/footballMatch.jpg'
+import badmintonMatch from '../assets/images/badmintonMatch.jpg'
 import { FaKhanda } from "react-icons/fa6";
 import { PiBuildingFill } from "react-icons/pi";
 import { FaGraduationCap } from "react-icons/fa6";
@@ -597,7 +610,7 @@ const communities = [
                 time: "7:00 AM",
                 location: "Manali",
                 attendees: "110",
-                image: photographyWalk
+                image: photoGraphyWalk
             }
         ],
 
@@ -632,8 +645,74 @@ const communities = [
         name: "Fitness Club",
         members: "5.2k Members",
         category: "Fitness",
-        description: "Stay active with workout challenges, healthy habits, and fitness motivation from the community."
+        description: "Stay active with workout challenges, healthy habits, and fitness motivation from the community.",
+        about:
+            "Fitness Club motivates members to stay healthy through workouts, nutrition tips, and fitness challenges.",
+
+        rules: [
+            "Support and motivate fellow members.",
+            "No body shaming or negativity.",
+            "Share only safe fitness advice.",
+            "Keep posts related to health and fitness."
+        ],
+
+
+        events: [
+            {
+                id: 1,
+                image: morningFitness,
+                title: "Morning Fitness Challenge",
+                date: "22 July 2026",
+                time: "6:30 AM",
+                location: "Chandigarh",
+                attendees: 250
+            },
+            {
+                id: 2,
+                image: yogaFitness,
+                title: "Yoga Wellness Camp",
+                date: "5 August 2026",
+                time: "7:00 AM",
+                location: "Mohali",
+                attendees: 180
+            },
+            {
+                id: 3,
+                image: nutrition,
+                title: "Nutrition Awareness Session",
+                date: "18 August 2026",
+                time: "5:00 PM",
+                location: "Ludhiana",
+                attendees: 140
+            }
+        ],
+
+        posts: [
+            {
+                author: "Anjali Verma",
+                time: "1 hour ago",
+                content: "Completed a 10 km morning run today! Feeling amazing.",
+                likes: 88,
+                comments: 31
+            },
+            {
+                author: "Rahul Sharma",
+                time: "8 hours ago",
+                content: "Who's joining tomorrow's fitness challenge?",
+                likes: 52,
+                comments: 19
+            },
+            {
+                author: "Simran Kaur",
+                time: "2 days ago",
+                content: "Sharing my weekly healthy meal plan with everyone.",
+                likes: 47,
+                comments: 21
+            }
+        ]
     },
+
+
     {
         id: 10,
         image: sports,
@@ -641,8 +720,72 @@ const communities = [
         name: "Sports Arena",
         members: "3.4k Members",
         category: "Sports",
-        description: "Play, compete, and connect with sports enthusiasts through local matches and training sessions."
+        description: "Play, compete, and connect with sports enthusiasts through local matches and training sessions.",
+        about:
+            "Sports Arena connects sports enthusiasts to organize matches, tournaments, and training sessions across different games.",
+
+        rules: [
+            "Respect teammates and opponents.",
+            "Promote fair play and sportsmanship.",
+            "No abusive language during discussions.",
+            "Keep posts related to sports activities."
+        ],
+
+        events: [
+            {
+                id: 1,
+                image: cricketMatch,
+                title: "Cricket Friendly Match",
+                date: "25 July 2026",
+                time: "8:00 AM",
+                location: "Amritsar",
+                attendees: 180
+            },
+            {
+                id: 2,
+                image: footballMatch,
+                title: "Football Tournament",
+                date: "12 August 2026",
+                time: "4:00 PM",
+                location: "Jalandhar",
+                attendees: 220
+            },
+            {
+                id: 3,
+                image: badmintonMatch,
+                title: "Badminton Championship",
+                date: "30 August 2026",
+                time: "10:00 AM",
+                location: "Patiala",
+                attendees: 140
+            }
+        ],
+
+        posts: [
+            {
+                author: "Harpreet Singh",
+                time: "2 hours ago",
+                content: "Our football team won the semi-finals today! 🏆",
+                likes: 74,
+                comments: 26
+            },
+            {
+                author: "Neha Gill",
+                time: "1 day ago",
+                content: "Registration for the badminton championship is now open.",
+                likes: 39,
+                comments: 17
+            },
+            {
+                author: "Amanpreet Kaur",
+                time: "3 days ago",
+                content: "Looking for players to join our weekend cricket practice.",
+                likes: 45,
+                comments: 20
+            }
+        ]
     }
+
 
 ]
 export default communities

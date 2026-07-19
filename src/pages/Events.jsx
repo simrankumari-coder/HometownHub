@@ -51,7 +51,7 @@ const Events = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-6'>
 
                         {filterEvents.length === 0 ? <p className='text-[15px] flex gap-1  text-gray-600'> <HiOutlineSearch className='text-2xl text-gray-600 mt-1' />"No Events yet"<br />Try another search or category</p> : filterEvents.map((event, index) => {
-                            return <EventCard key={index} attendees={event.attendees} date={event.date} category={event.category}
+                            return <EventCard key={event.id} id={event.id} attendees={event.attendees} date={event.date} category={event.category}
                                 time={event.time} name={event.name} location={event.location} image={event.image} description={event.description} />
                         })
                         }

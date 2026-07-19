@@ -3,7 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
-const EventCard = ({ image, name, date, time, category, attendees, location, description }) => {
+import { Link } from 'react-router-dom';
+const EventCard = ({ image, name, date, time, category, attendees, location, description, id }) => {
     return (
         <div>
             <div className='shadow-lg hover:-translate-y-2 hover-shadow-xl duration-300 trantision bg-slate-50 rounded-xl p-3 flex flex-col gap-2 bg-white'>
@@ -16,7 +17,12 @@ const EventCard = ({ image, name, date, time, category, attendees, location, des
                     <p className='text-black font-medium text-sm flex gap-2 '><FaLocationDot className='mt-1' /><span className=''>{location}</span></p></div>
                 <p className='text-blue-700 flex gap-1'><FaUsers className='mt-1' />{attendees}{" "}Attendees</p>
                 <p className='text=gray-600 text-sm leading-relaxed'>{description}</p>
-                <button className='font-semibold bg-blue-700 text-white duration-300 hover:bg-blue-700 rounded-md p-2'>Join Event</button>
+                <div className='flex justify-center items-center gap-4'>
+                    <Link to={`/events/${id}`} >
+                        <button className='bg-white text-blue-700 border border-blue-700 duration-300 hover:bg-blue-50 font-semibold rounded-md p-2'>View Details</button>
+                    </Link>
+                    <button className='bg-blue-700 text-white duration-300 hover:bg-blue-700 font-semibold rounded-md p-2'>Join Event</button>
+                </div>
             </div>
         </div>
     )

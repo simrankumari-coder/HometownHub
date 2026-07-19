@@ -9,6 +9,7 @@ import Communities from './pages/Communities'
 import Profile from './pages/Profile'
 import Footer from './components/Footer'
 import CommunityDetail from './pages/CommunityDetail'
+import EventDetail from './pages/EventDetail'
 function App() {
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/communities" element={<Communities />} />
         <Route path='/communities/:id' element={<CommunityDetail />} />
+        <Route path='/events/:id' element={<EventDetail />} />
       </Routes>
       <Footer />
     </>

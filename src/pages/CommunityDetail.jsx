@@ -20,7 +20,7 @@ const CommunityDetail = () => {
     const { id } = useParams()
 
 
-    const community = communities.find((community, index) => {
+    const community = communities.find((community) => {
         return community.id === Number(id)
     })
 
@@ -30,7 +30,7 @@ const CommunityDetail = () => {
             <div className=' bg-no-repeat h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80  bg-cover bg-center' style={{ backgroundImage: `url(${community.image})` }}> </div>
             <hr className='my-4 border-t border-slate-300' />
             <div className='max-w-6xl mx-auto px-12 py-8 flex flex-col gap-5'>
-                <div className='flex justify-center items-center mt-4 bg-white shadow-md   w-full max-w-5xl rounded-xl'>
+                <div className='flex jus-+r items-center mt-4 bg-white shadow-md   w-full max-w-5xl rounded-xl'>
                     <div className='flex flex-col gap-6 justify-center items-center p-6'>
                         <div className='bg-white w-14 h-14 shadow-lg md:h-16 md:w-16 lg:w-20 lg:h-20 rounded-full flex justify-center items-center'>
 
