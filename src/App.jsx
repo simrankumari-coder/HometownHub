@@ -7,6 +7,7 @@ import Register from './pages/Register'
 import Events from './pages/Events'
 import Communities from './pages/Communities'
 import Profile from './pages/Profile'
+import Feed from './pages/Feed'
 import Footer from './components/Footer'
 import CommunityDetail from './pages/CommunityDetail'
 import EventDetail from './pages/EventDetail'
@@ -25,6 +26,7 @@ function App() {
         <Route path="/communities" element={<Communities />} />
         <Route path='/communities/:id' element={<CommunityDetail />} />
         <Route path='/events/:id' element={<EventDetail />} />
+        <Route path='/feed' element={<Feed />} />
       </Routes>
       <Footer />
     </>
