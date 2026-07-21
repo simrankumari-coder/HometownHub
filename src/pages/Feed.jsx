@@ -1,9 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
 import { FaUser } from "react-icons/fa"
 import { FaHeart } from "react-icons/fa";
 import feedData from '../data/feed'
 const Feed = () => {
-
+    const [toggle, setToggle] = useState(feedData)
+    const toggleLike = (id) => {
+        const newObj = toggle.map(toggle => {
+            if (toggle.id === id) {
+                return !toggle.isToggle
+            } else {
+                toggle
+            }
+        })
+        setToggle(...toggle, newObj)
+    }
+    console.log(
+        !toggle.isToggle
+    )
     return (
         <div className='bg-white px-4 py-7 flex flex-col gap-8'>
             <div className=''>
@@ -12,7 +26,7 @@ const Feed = () => {
             </div>
             <section>
                 <div className='flex flex-col justify-center gap-5 items-center max-w-5xl w-full'>
-                    {feedData.map((post) => {
+                    {toggle.map((post) => {
                         return <div key={post.id} className='px-5 py-5 bg-slate-50 max-w-5xl w-full shadow-lg rounded-md '>
                             <div className='flex justify-between'>
 
@@ -20,11 +34,14 @@ const Feed = () => {
 
                                 <p className=' text-sm text-gray-500'>{post.time}</p>
                             </div>
-                            <p class>{post.community}</p>
-                            <p>{post.content}</p>
+                            <p>{post.community}</p>
+                            <p>{post.content}</p>gg
                             <img className='max-w-sm w-full rounded-lg' src={post.image} alt={post.community} />
                             <div>
-                                <span><FaHeart />{post.likes}</span>
+                                <span><FaHeart onClick={() => toggleLike(post.id)} className={`${post.isToggle === true ? "text-red-600" : "text-white"} `} /></span>
+
+                                <span>{post.likes}</span>
+
                                 <span>comments</span>
                             </div>
                         </div>

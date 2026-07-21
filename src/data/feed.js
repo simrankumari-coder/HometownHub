@@ -17,6 +17,7 @@ const feedData = [
         content: "What an incredible day at the Punjab Heritage Festival! Thank you to everyone who celebrated our traditions, music, and culture with us.",
         image: heritagePost,
         likes: 124,
+        isToggle: false,
         comments: [
             { author: "Rahul", text: "Amazing event!" },
             { author: "Priya", text: "Loved the cultural performances." }
@@ -30,6 +31,7 @@ const feedData = [
         content: "The Intercity Cricket Tournament begins tomorrow. Wishing every team the very best. Let's enjoy the spirit of sportsmanship!",
         image: cricketPost,
         likes: 98,
+        isToggle: false,
         comments: [
             { author: "Aman", text: "Can't wait!" },
             { author: "Rohit", text: "Go Team Punjab!" }
@@ -43,6 +45,7 @@ const feedData = [
         content: "React Bootcamp registrations are officially open. Learn React by building real-world projects with experienced mentors.",
         image: reactPost,
         likes: 156,
+        isToggle: false,
         comments: [
             { author: "Karan", text: "Already registered!" },
             { author: "Neha", text: "Looking forward to it." }
@@ -56,6 +59,7 @@ const feedData = [
         content: "Our Career Guidance Seminar helped students explore career paths, higher education, and interview preparation.",
         image: careerPost,
         likes: 87,
+        isToggle: false,
         comments: [
             { author: "Vikas", text: "Very informative." },
             { author: "Anjali", text: "Thank you for organizing." }
@@ -69,6 +73,7 @@ const feedData = [
         content: "Together we planted more than 500 trees during our Tree Plantation Drive. Every tree makes our future greener.",
         image: treePost,
         likes: 142,
+        isToggle: false,
         comments: [
             { author: "Riya", text: "Proud to be part of it." },
             { author: "Manpreet", text: "Great initiative!" }
@@ -82,6 +87,7 @@ const feedData = [
         content: "The Startup Networking Meetup connected entrepreneurs, developers, and investors to exchange ideas and opportunities.",
         image: startupPost,
         likes: 111,
+        isToggle: false,
         comments: [
             { author: "Harsh", text: "Met amazing people." },
             { author: "Nitin", text: "Waiting for the next meetup." }
@@ -95,6 +101,7 @@ const feedData = [
         content: "Our Photography Walk captured beautiful moments across the city. Thank you to everyone who joined us.",
         image: photoPost,
         likes: 95,
+        isToggle: false,
         comments: [
             { author: "Komal", text: "Beautiful clicks!" },
             { author: "Rahul", text: "Amazing experience." }
@@ -108,6 +115,7 @@ const feedData = [
         content: "The Independence Day Marathon brought together runners of all ages to celebrate fitness, unity, and patriotism.",
         image: marathonPost,
         likes: 173,
+        isToggle: false,
         comments: [
             { author: "Deepak", text: "Fantastic event!" },
             { author: "Sonia", text: "See you next year." }
@@ -121,6 +129,7 @@ const feedData = [
         content: "Folk Music Night was filled with soulful performances and unforgettable memories. Thank you for your support.",
         image: musicPost,
         likes: 138,
+        isToggle: false,
         comments: [
             { author: "Mehak", text: "Wonderful evening!" },
             { author: "Arjun", text: "Loved every performance." }
@@ -134,6 +143,7 @@ const feedData = [
         content: "The AI and Innovation Summit inspired participants with exciting discussions about artificial intelligence and future technologies.",
         image: aiPost,
         likes: 201,
+        isToggle: false,
         comments: [
             { author: "Nikhil", text: "Great insights!" },
             { author: "Pooja", text: "Amazing speakers." }
